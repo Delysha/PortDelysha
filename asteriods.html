@@ -11,6 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="CSS/ProjectenStyle.css">
+    <script src="Game.js" defer></script>
 
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
@@ -28,15 +29,18 @@
 
     <main>
         <article>
-            <h1>The rift Guardian</h1>
+            <h1>Asteriods</h1>
             <figure>
-                <video class="BAMbg" poster="images/Rift.png" src="Gifs/Rift Guardians Trailer.mp4" controls ></video>
-                <p>
-                    
-                     <a href="https://www.youtube.com/watch?v=JawSwseYzAM">bron</a>
-                 </p>
+                <div class="video-container">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/A16bpQoosHs?si=_oohg698XJvhl7q5=1&mute=1" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
                 <figcaption class="figcaptionC">
-                    Our game for HLO 
+                 Website game 
                 </figcaption>
             </figure>
 
@@ -44,105 +48,55 @@
                 What is this project about?
             </h2>
             <p>
-                The Rift Guardian is about a person who went through a portal to a strange planet filled with portals. Suddenly, 
-                the person is attacked by aliens coming through the portals. 
-                Now, 
-                the person's mission is to protect the portal leading to the human world.
-                The game is a VR shooter made in Unreal Engine 5.3 with Blueprints.
+                This game was for a website that me and a classmate had to make in the first year. He made the website,
+                 and I mainly focused on the game itself. We chose Asteroids because it looked more challenging than the other games we could make.
+                 I really liked making this game since it was the first game I ever made. And it was a great first Experience
 
                 <br><br>
-                Project date: From February 2024 - june 2024 
+                Project date: From november 2022 - januari 2023
                 <br><br>
-                Project duration: 4 months.
+                Project duration: 2 months.
                 <br><br>
-                Development Team: 24 people.
+                Development Team: 2 people.
                 <br><br>
-                Engine: Unreal engine 5.3
+                Engine: no engine
                 <br><br>
-                Programming language: Blueprints
+                Programming language: JavaScript
             </p>
             
-            <img  class="BAMbg"  src="Images/Poster_The-Rift-Guardian.png" alt="Poster rift Guardian">
-
+            <article class="arCanvasS">
+                <canvas id="gameCanvas" width="500" height="500">
+                </canvas>
+                <figcaption class="figcaptionC">
+                 A mini version of the game
+                </figcaption>
             <h2>
                 My role & contribution in this project.
             </h2>
             <p class="flexP">
-                I was a programmer for this project, my role was to create mechanics for our game. I made the Player torso, Remote Grab, player Movement and WalkAble <Area></Area>.
+                In this game, I made the whole thing on my own. 
+                It took me 8 weeks to get it like this and to learn how to make an Asteroids game. 
+                I decided to add a few extra features, like levels, to make it look better."
             </p>
+            <div class="container">
+                <div class="img-col">
+                    <img  class="BAMbg"  src="Images/Game code.png" alt="torso player">
 
-            <div class="container">
-                <div class="img-col">
-                    <img  class="BAMbg"  src="Images/playerbody.png" alt="torso player">
-                    <br><br><br><br>
-                    <img  class="BAMbg"  src="Images/Torso Code.png" alt="torso player">
-                    <figcaption>
-                        The torso is to make sure we have a colider on the player for objects that have to colide and some code i used
-                    </figcaption>
                 </div>
             </div>
             <p class="flexP">
-                This is what the torso looked like outside the game. As you can see that it is actually just a torso and not the whole body.
-                <br></br>
-                We did it this way because you only needed the torso for the visual affect with the injection.
-                The torso is a female torso because I agreed that it would be more fun if we were women. 
-                And also because I was 1 of the 2 girls in the group we worked in I wanted to show that there where also girls in the development group.
-                And also that it is fun for them because you see more visuality in the torso because there were more breasts to see. 
-                <br></br>
-                at the end we choose to make it hideable in game cause we tought that would be better since the torso was a little to big.
+                here you can see the code a little bit. i sadly cant show all of the code here but i can tell you a little bit about it.
+                <br><br><br><br>
+                The main mechanics include:
+                <br><br><br><br>
+                Spaceship Movement: You can rotate the ship with left/right arrows and accelerate with up.
+                Shooting: Spacebar fires lasers.
+                Lives: You’ve got 3 lives, lose one when you hit an Asteroids
+                Asteroids: Randomly spawn and break into smaller pieces when destroyed.
+                Difficulty: As the game progresses, more asteroids appear.
+                Sound Effects: Thrust, explosion, and shooting sounds are integrated for immersion.
+                It’s built using pygame with collision detection, scoring, and continuous gameplay as the core loop.
             </p>
-            <img class="imgPJ" src="Images/PlayerRemote.png">
-            <br><br><br><br>
-            <div class="container">
-                <div class="img-col">
-                    <img class="BAMbg" src="Images/RaycastBlueprint.png">
-                    <figcaption>
-                        This is the player remote grab and raycast Blueprint
-                    </figcaption>
-                </div>
-            </div>
-            <p class="flexP">
-                we made the Remote grab so you didnt have too bow in the game to pick a weapon off from the ground or the shop.
-                we also made beam that goes out of you finger tips that will go brighter when you point at a Object that you can pick up. 
-                we made that with a raycast
-            </p>
-            <br><br><br><br>
-            <div class="container">
-                <div class="img-col">
-                    <img height="600" class="imgPJ" src="Images/WalkAbleGroundUpGround.png">
-                    <figcaption>
-                        This is the WalkAble from above
-                    </figcaption>
-                    <br><br><br><br>
-                    <img height="600" class="imgPJ" src="Images/Bariers.png">
-                    <figcaption>
-                        this the barriers where you cant go tru
-                    </figcaption>
-                    <img class="imgPJ" src="Images/area.gif">
-                </div>
-               
-            </div>
-            <p class="flexP">
-                we made this Walkable area so the player could walk in the game and look at other things then only standing around. 
-                but we did make a Barrier so the player can not just go of from the area. the only things it can do in the Area is,
-                Going to the shop or hide behind the shelters it has on it. if you try to go tru the boundry you will just get blocked.
-            </p>
-            <div class="container">
-                <div class="img-col">
-                    <img height="600" class="imgPJ" src="Images/Video zonder titel ‐ Gemaakt met Clipchamp (17).gif">
-                    <figcaption>
-                        This is the shelter you use to hide behind
-                    </figcaption>
-                </div>
-            </div>
-            <p class="container">
-                we made this shelter so you can hide for the Ranged shooter cause if you hide behide it the ranged shooter will shoot on that instead of on you. 
-                and after a few shots it will disapear from the game and after 15 seconds it will be back in the game.
-                <br><br>
-                This is the code I have created for the shelter; we are using a health system for that.
-            </p>
-            <img class="imgPJ" src="Images/blueprintwalkablearea.png">
-            <br><br><br><br>
         </article>
     </main>
 
